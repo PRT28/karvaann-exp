@@ -1,0 +1,105 @@
+import Image from "next/image";
+
+const leisureCards = [
+  {
+    title: "Limitless",
+    description:
+      "Limitless Trips are the heart of Karvaann Experiences. These are fully customised journeys designed around your preferences, pace and travel style.",
+    icon: "/services/limitless.svg",
+  },
+  {
+    title: "Standalone Services",
+    description:
+      "For travellers who prefer flexibility, we offer standalone travel solutions across destinations worldwide. These can be booked independently or combined with a larger itinerary.",
+    icon: "/services/standalone-service.svg",
+  },
+];
+
+const corporateCards = [
+  {
+    title: "Business Travel Solutions",
+    description:
+      "We take the stress out of corporate travel with efficient and cost-effective solutions tailored for professionals on the move.",
+    icon: "/services/business-travel-solutions.svg",
+  },
+  {
+    title: "MICE (Meetings, Incentives, Conferences & Exhibitions)",
+    description:
+      "With over three years of experience executing MICE travel, we curate corporate events that go beyond logistics and deliver meaningful experiences.",
+    icon: "/about/vision.svg",
+  },
+  {
+    title: "Value-Added Corporate Services",
+    description:
+      "To support long-term corporate partnerships, we also offer value-added services that enhance efficiency and optimise costs.",
+    icon: "/services/value-added.svg",
+  },
+];
+
+function ServiceCard({ title, description, icon }: { title: string; description: string; icon: string }) {
+  return (
+    <div className="relative w-[300px] h-68 bg-[#f4efe6] shadow-md rounded-[12px] px-6 pt-16 pb-8 text-center">
+      <div className="absolute left-1/2 -translate-x-1/2 -top-10">
+        <Image src={icon} alt={title} width={100} height={100} />
+      </div>
+      <h3 className="text-[16px] font-bold mb-4">{title}</h3>
+      <p className="text-[12px] leading-6 text-[#6a594d]">{description}</p>
+      <div className="w-10 h-[3px] bg-[#9747FF] mt-6 mx-auto rounded-lg" />
+    </div>
+  );
+}
+
+export default function ServicesPage() {
+  return (
+    <main className="font-sans text-[#4b3b2b]">
+      <section className="relative min-h-[280px] md:min-h-[360px] overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553709724-ccfb0930663f?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-black/45" />
+        <div className="relative z-10 px-8 md:px-20 py-16 md:py-24 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+          <div>
+            <div className="font-heading uppercase text-[#FFC709] text-[70px] md:text-[96px] leading-none tracking-wide">
+              Our Services
+            </div>
+            <div className="w-[380px] md:w-[520px] mt-4 bg-white/80 h-[2px]" />
+          </div>
+          <div className="text-white/90 text-[13px] md:text-[14px] leading-6 max-w-md">
+            <p>
+              At Karvaann Experiences, we design travel solutions that are thoughtful, seamless, and experience-led. Our services are structured across two core verticals: leisure travel and corporate travel, each crafted with the same attention to detail and commitment to quality.
+            </p>
+            <p className="mt-4">
+              Whether you are planning a personal journey or managing business travel at scale, we ensure every experience feels effortless and well-executed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 md:px-20 py-16">
+        <div className="inline-flex font-bold items-center gap-3 bg-[#FFC709] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[18px]">
+          Leisure Travel Services
+        </div>
+        <p className="mt-6 text-[15px] text-[#6a594d] max-w-3xl leading-7">
+          Our leisure travel services are built for travellers who want journeys that feel personal, immersive, and memorable. From complete trip planning to individual travel components, we offer flexible solutions based on how you like to travel.
+        </p>
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
+          {leisureCards.map((card) => (
+            <ServiceCard key={card.title} {...card} />
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 md:px-20 py-16">
+        <div className="inline-flex font-bold items-center gap-3 bg-[#FFC709] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[18px]">
+          Corporate Travel Services
+        </div>
+        <p className="mt-6 text-[15px] text-[#6a594d] max-w-4xl leading-7">
+          Karvaann Experiences offers end-to-end corporate travel and event solutions designed to make business travel efficient, smooth, and impactful. From executive movements to large-scale corporate events, we manage logistics with clarity and precision.
+        </p>
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-10 flex-wrap">
+          {corporateCards.map((card) => (
+            <ServiceCard key={card.title} {...card} />
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(to bottom, #FEF7DA, #FFFFFF);
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-antonio);
+  --font-sans: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes tw-typing {
+  from { width: 0 }
+  to   { width: var(--tw-w) }
+}
+
+@keyframes tw-blink {
+  50% { border-color: transparent; }
+}
+
+.tw {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 3px solid rgba(255,255,255,0.95);
+}
+
+/* Line 1 */
+.tw-1 {
+  --tw-w: 9ch; /* SAME HOTEL (9 incl space) */
+  animation:
+    tw-typing 1.05s steps(9, end) 0.1s forwards,
+    tw-blink 0.5s step-end 10 0.1s;
+}
+
+/* Line 2 */
+.tw-2 {
+  --tw-w: 23ch; /* SAME SIGHTSEEING LISTS, */
+  animation:
+    tw-typing 1.55s steps(23, end) 1.25s forwards,
+    tw-blink 0.5s step-end 10 1.25s;
+}
+
+/* Line 3 */
+.tw-3 {
+  --tw-w: 22ch; /* SAME COPY-PASTE TRIPS ? */
+  animation:
+    tw-typing 1.55s steps(22, end) 3.00s forwards,
+    tw-blink 0.5s step-end 10 3.00s;
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .tw {
+    width: auto !important;
+    border-right: 0 !important;
+    animation: none !important;
+  }
 }
