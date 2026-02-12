@@ -17,10 +17,10 @@ export default function GlassCard({
   return (
     <Link
       href={href}
-      className="group relative block overflow-hidden rounded-[32px] bg-neutral-200"
+      className="group relative block overflow-hidden rounded-[32px] bg-neutral-200 w-full"
     >
       {/* Image */}
-      <div className="relative h-[500px] w-[450px] overflow-hidden rounded-[32px]">
+      <div className="relative h-[360px] sm:h-[420px] md:h-[500px] w-full max-w-[450px] overflow-hidden rounded-[32px]">
         <Image
           src={imageSrc}
           alt={title}
@@ -33,7 +33,7 @@ export default function GlassCard({
         <div className="absolute inset-0 bg-black/20 transition duration-500" />
 
         {/* Arrow Button */}
-        <div className="absolute top-6 right-16 z-20">
+        <div className="absolute top-4 md:top-6 right-4 md:right-16 z-20">
           <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/70 text-white transition duration-300 group-hover:bg-white/10">
             <svg
               viewBox="0 0 24 24"
@@ -57,11 +57,11 @@ export default function GlassCard({
                           group-hover:bg-white/25 transition duration-500" />
 
           {/* Text Content */}
-          <div className="relative z-10 px-8 py-4 text-white">
-            <h3 className="text-3xl font-semibold">{title}</h3>
+          <div className="relative z-10 px-6 md:px-8 py-4 text-white">
+            <h3 className="text-xl md:text-3xl font-semibold">{title}</h3>
 
             <p
-              className="mt-4 text-lg line-clamp-1 overflow-hidden opacity-100 translate-y-0 transition-all duration-500
+              className="mt-3 md:mt-4 text-sm md:text-lg line-clamp-1 overflow-hidden opacity-100 translate-y-0 transition-all duration-500
                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:line-clamp-none"
             >
               {description}

@@ -1,14 +1,14 @@
 export default function ReadySection() {
   return (
-    <section className="bg-transparent px-20 py-16 my-16">
+    <section className="bg-transparent px-6 md:px-20 py-12 md:py-16 my-10 md:my-16">
       <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 items-center">
         <div>
-          <h1 className="font-heading uppercase text-[124px] text-[#4b3b2b] font-extrabold">
+          <h1 className="font-heading uppercase text-[40px] md:text-[124px] text-[#4b3b2b] font-extrabold leading-tight">
             Ready for your next Karvaann?
           </h1>
           
         </div>
-        <form className="bg-[#FFF4C7] rounded-md px-6 py-12 shadow-[0_10px_24px_rgba(0,0,0,0.12)]">
+        <form className="bg-[#FFF4C7] rounded-md px-6 py-8 md:py-12 shadow-[0_10px_24px_rgba(0,0,0,0.12)]">
           <div className="space-y-4">
             <input
               className="w-full border border-[#E4D6A8] bg-white rounded-sm px-3 py-2 text-[14px] font-sans"

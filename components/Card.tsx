@@ -13,7 +13,7 @@ export default function Card({
   rating = 5.0
 }: CardProps) {
   return (
-      <div className="relative max-w-[320px] overflow-hidden rounded-[24px] aspect-[3/4]">
+      <div className="relative w-full max-w-[320px] overflow-hidden rounded-[24px] aspect-[3/4]">
 
         {/* Bottom Gradient Overlay */}
         <div className="absolute inset-0 z-10 bg-black/20" />
