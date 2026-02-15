@@ -140,22 +140,34 @@ export default function Home() {
 
       <section className="px-6 md:px-28 py-10 md:py-18 [content-visibility:auto] [contain-intrinsic-size:1px_900px]">
         <h1 className="text-[#493628] font-bold font-heading text-[44px] md:text-[108px]">OUR SERVICES</h1>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          <GlassCard
-            title="Limitless"
-            description="Personalized itineraries tailored to each traveller&apos;s preferences"
-            imageSrc="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          />
-          <GlassCard
-            title="Standalone Services"
-            description="Personalized itineraries tailored to each traveller&apos;s preferences"
-            imageSrc="https://images.unsplash.com/photo-1603881359318-e2bc03deaaee?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          />
-          <GlassCard
-            title="Corporate Travel"
-            description="Personalized itineraries tailored to each traveller&apos;s preferences"
-            imageSrc="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          />
+        <div className="mt-8 w-[80vw] overflow-x-scroll">
+          <div style={{width: 'fit-content'}} className="flex flex-nowrap gap-6">
+            <GlassCard
+              title="Leisure Travel Services"
+              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              imageSrc="https://images.unsplash.com/photo-1658298208155-ab71765747a1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <GlassCard
+              title="Standalone Services"
+              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              imageSrc="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <GlassCard
+              title="Business Travel Solutions"
+              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              imageSrc="https://images.unsplash.com/photo-1675106566229-eb0cf31934e1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <GlassCard
+              title="MICE"
+              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              imageSrc="https://images.unsplash.com/photo-1618333258404-f509733839c4?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <GlassCard
+              title="Value Added Corporate Services"
+              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              imageSrc="https://plus.unsplash.com/premium_photo-1661461204441-b239a799647b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
         </div>
       </section>
 

@@ -17,7 +17,7 @@ export default function GlassCard({
   return (
     <Link
       href={href}
-      className="group relative block overflow-hidden rounded-[32px] bg-neutral-200 w-full"
+      className="group relative block overflow-hidden rounded-[32px] bg-neutral-200 shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[360px]"
     >
       {/* Image */}
       <div className="relative h-[360px] sm:h-[420px] md:h-[500px] w-full overflow-hidden rounded-[32px]">
@@ -58,10 +58,10 @@ export default function GlassCard({
 
           {/* Text Content */}
           <div className="relative z-10 px-6 md:px-8 py-4 text-white">
-            <h3 className="text-xl md:text-3xl font-semibold">{title}</h3>
+            <h3 className="text-xl font-semibold">{title}</h3>
 
             <p
-              className="mt-3 md:mt-4 text-sm md:text-lg line-clamp-1 overflow-hidden opacity-100 translate-y-0 transition-all duration-500
+              className="mt-3 md:mt-4 text-sm md:text-md line-clamp-1 overflow-hidden opacity-100 translate-y-0 transition-all duration-500
                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:line-clamp-none"
             >
               {description}

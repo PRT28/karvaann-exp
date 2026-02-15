@@ -7,7 +7,7 @@ export default function Testimonials() {
   return (
     <section className="bg-transparent px-6 md:px-28 py-16">
       <div className="max-w-6xl">
-        <h2 className="font-heading uppercase text-[42px] md:text-[56px] text-[#4b3b2b]">
+        <h2 className="text-[#493628] uppercase font-bold font-heading text-[44px] md:text-[108px]">
           Testimonials
         </h2>
         <div className="mt-10 w-[80vw] overflow-x-scroll">
