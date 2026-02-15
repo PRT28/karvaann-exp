@@ -1,0 +1,70 @@
+{
+    "international": [
+        {
+            "name": "Vietnam",
+            "img": "https://images.unsplash.com/photo-1531737212413-667205e1cda7?q=80&w=868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Thailand",
+            "img": "https://images.unsplash.com/photo-1537956965359-7573183d1f57?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Dubai",
+            "img": "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Singapore",
+            "img": "https://images.unsplash.com/photo-1516496636080-14fb876e029d?q=80&w=776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Bali",
+            "img": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Europe",
+            "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Sri Lanka",
+            "img": "https://images.unsplash.com/photo-1574611122955-5baa61496637?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Malaysia",
+            "img": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=1728&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ],
+    "india": [
+        {
+            "name": "Himachal",
+            "img": "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Uttarakhand",
+            "img": "https://images.unsplash.com/photo-1547453155-ae5be9428a4f?q=80&w=654&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Leh",
+            "img": "https://images.unsplash.com/photo-1617824077360-7a77db40aae1?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Sikkim",
+            "img": "https://images.unsplash.com/photo-1573398643956-2b9e6ade3456?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Kerela",
+            "img": "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Kashmir",
+            "img": "https://images.unsplash.com/photo-1566837497312-7be7830ae9b1?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Spiti",
+            "img": "https://images.unsplash.com/photo-1636567652095-f59e54ed6d3a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Rajasthan",
+            "img": "https://images.unsplash.com/photo-1622225641765-8c8ef0dcb678?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
