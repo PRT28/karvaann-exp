@@ -12,7 +12,7 @@ type LeadFormState = {
 };
 
 const STORAGE_KEY = "karvaann_lead_form_submitted";
-const OPEN_DELAY_MS = 500;
+const OPEN_DELAY_MS = 5000;
 
 const initialForm: LeadFormState = {
   destination: "India",

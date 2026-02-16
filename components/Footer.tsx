@@ -46,21 +46,21 @@ export default function Footer() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-[16px]">
             <div>
               <p className="font-semibold mb-4">About Karvaann Experiences</p>
-              <div className="space-y-2 text-white/90">
+              <div className="space-y-2 flex flex-col gap-2 text-white/90">
                 <Link href="/about">About us</Link>
                 <Link href="/contact">Contact us</Link>
               </div>
             </div>
             <div>
               <p className="font-semibold mb-4">For Travellers</p>
-              <div className="space-y-2 text-white/90">
+              <div className="space-y-2 flex flex-col gap-2 text-white/90">
                 <Link href="/services">Limitless Booking</Link>
                 <Link href="/services">Standalone Booking</Link>
               </div>
             </div>
             <div>
               <p className="font-semibold mb-4">Terms &amp; Condition</p>
-              <div className="space-y-2 text-white/90">
+              <div className="space-y-2 flex flex-col gap-2 text-white/90">
                 <Link href="/terms-conditions">T&amp;C</Link>
                 <Link href="/terms-conditions">Privacy Policy</Link>
               </div>
@@ -101,7 +101,7 @@ export default function Footer() {
                 </SocialIcon>
               </div>
               <div className="space-y-2 text-white/90">
-                <p>infoKarvaannexperiences@gmail.com</p>
+                <p>info@karvaanexperiences.com</p>
                 <p>+91 95400 01036</p>
               </div>
             </div>
