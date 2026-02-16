@@ -28,8 +28,9 @@ export default function Footer() {
             <p className="text-[16px] md:text-[18px] font-sans text-white/90 max-w-xl">
               Join Karvaann Experiences&apos; Whatsapp community &amp; stay upto date on special offers and events.
             </p>
-            <button
+            <Link
               type="button"
+              href={SOCIAL_LINKS.whatsapp}
               className="bg-[#FFD32A] text-[#2f241b] font-semibold rounded-md px-8 py-3 flex items-center gap-4 w-full md:w-auto md:min-w-[220px] justify-center"
             >
               <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#1fb64f]">
@@ -38,7 +39,7 @@ export default function Footer() {
                 </svg>
               </span>
               Join now
-            </button>
+            </Link>
           </div>
 
           <div className="mt-8 border-t border-white/70" />

@@ -86,7 +86,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <div className="px-6 md:px-28 py-12 md:py-16 font-[600] text-[12px] md:text-[12px] leading-6">
+      <div className="px-6 md:px-28 py-12 md:py-16 font-[600] text-[14px] md:text-[16px] leading-6">
         <p>
           At Karvaann Experiences, we design travel solutions that are thoughtful, seamless, and experience-led. Our services are structured across two core verticals: leisure travel and corporate travel, each crafted with the same attention to detail and commitment to quality.
         </p>

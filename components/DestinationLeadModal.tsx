@@ -15,6 +15,7 @@ type FormState = {
   whatsappNumber: string;
   email: string;
   tripNotes: string;
+  serviceType: string
 };
 
 function isBottomSheetMode(): boolean {
@@ -35,6 +36,7 @@ export default function DestinationLeadModal({ open, destination, onClose }: Des
     whatsappNumber: "",
     email: "",
     tripNotes: "",
+    serviceType: ""
   });
 
   useEffect(() => {
@@ -82,7 +84,7 @@ export default function DestinationLeadModal({ open, destination, onClose }: Des
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...form,
-          source: "home_card_modal",
+          source: "destination_form",
           page,
         }),
       });
@@ -101,6 +103,7 @@ export default function DestinationLeadModal({ open, destination, onClose }: Des
           whatsappNumber: "",
           email: "",
           tripNotes: "",
+          serviceType: ""
         });
       }, 700);
     } catch (error) {
@@ -167,6 +170,19 @@ export default function DestinationLeadModal({ open, destination, onClose }: Des
                 value={form.travelDate}
                 onChange={(e) => updateField("travelDate", e.target.value)}
               />
+            </div>
+
+            <div>
+              <label className="block mb-2 text-[16px] leading-none font-sans text-[#171717]">Service Type</label>
+              <select
+                className="w-full py-2 rounded-xl border border-[#D8D8D8] bg-[#F2F2F2] px-5 text-[12px] md:text-[16px] leading-none font-sans text-[#222]"
+                value={form.serviceType}
+                onChange={(e) => updateField("serviceType", e.target.value)}
+                required
+              >
+                <option>Leisure Travel</option>
+                <option>Corporate Travel</option>
+              </select>
             </div>
 
             <div>

@@ -46,17 +46,17 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
                     sizes="72px"
                   />
                 </div>
-                <h3 className="font-sans text-[18px] font-bold text-[#7E7393]">
+                <h3 className="font-sans text-[18px] font-bold text-[#6F2DBD]">
                   {testimonial.name}
                 </h3>
               </div>
 
-              <p className="mt-5 text-[12px] text-[#8D8D90] font-sans whitespace-pre-line">
+              <p className="mt-5 text-[12px] text-[#000] font-sans whitespace-pre-line">
                 {testimonial.comment}
               </p>
 
               <div className="mt-auto pt-6 flex items-center justify-between">
-                <span className="font-sans text-[18px] font-bold text-[#8F74C7]">
+                <span className="font-sans text-[18px] font-bold text-[#6F2DBD]">
                   {testimonial.location}
                 </span>
                 <Image

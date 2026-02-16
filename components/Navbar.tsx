@@ -10,7 +10,8 @@ export default function Navbar() {
                 <Link href="/" className="border-b-2 border-transparent hover:border-white transition-colors">Home</Link>
                 <Link href="/about" className="border-b-2 border-transparent hover:border-white transition-colors">About us</Link>
                 <Link href="/services" className="border-b-2 border-transparent hover:border-white transition-colors">Our Services</Link>
-                <Link href="/contact" className="border-b-2 border-transparent hover:border-white transition-colors">Contact Us</Link>
+                <Link href="/services" className="border-b-2 border-transparent hover:border-white transition-colors">Customised</Link>
+                <Link href="/customised" className="border-b-2 border-transparent hover:border-white transition-colors">Contact Us</Link>
                 <Link href="tel:+919540001036" className="border-[1px] px-2 py-1 rounded-[45px] border-white flex flex-row items-center gap-2 text-[12px] md:text-[12px]">
                     <Image src="/call.svg" width={10} height={10} alt="Call" />
                     <p>+91 95400 01036</p>

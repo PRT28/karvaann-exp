@@ -50,7 +50,7 @@ export default function GlassCard({
 
         {/* Bottom Glass Panel */}
         <div className="absolute bottom-0 left-0 w-full transition-all duration-500 ease-out
-                        h-[110px] group-hover:h-[150px]">
+                        h-[110px] group-hover:h-[180px]">
 
           {/* Glass blur background */}
           <div className="absolute inset-0 bg-white/20 backdrop-blur-md 

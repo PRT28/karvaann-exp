@@ -13,6 +13,7 @@ type FormState = {
   whatsappNumber: string;
   email: string;
   tripNotes: string;
+  serviceType: string;
 };
 
 const initialState = (destination: string): FormState => ({
@@ -21,6 +22,7 @@ const initialState = (destination: string): FormState => ({
   whatsappNumber: "",
   email: "",
   tripNotes: "",
+  serviceType: "",
 });
 
 export default function CustomisedEnquiryForm({ initialDestination = "" }: CustomisedEnquiryFormProps) {
@@ -95,6 +97,21 @@ export default function CustomisedEnquiryForm({ initialDestination = "" }: Custo
       <div>
         <label className="text-[13px] font-semibold">Whatsapp number</label>
         <div className="relative mt-2">
+          <select
+            className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
+            value={form.serviceType}
+            onChange={(e) => updateField("serviceType", e.target.value)}
+            required
+          >
+            <option>Leisure Travel</option>
+            <option>Corporate Travel</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label className="text-[13px] font-semibold">Whatsapp number</label>
+        <div className="relative mt-2">
           <input
             className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
             placeholder="+91"
@@ -118,7 +135,7 @@ export default function CustomisedEnquiryForm({ initialDestination = "" }: Custo
       </div>
 
       <div>
-        <label className="text-[13px] font-semibold">Trip Notes</label>
+        <label className="text-[13px] font-semibold">Remarks</label>
         <textarea
           className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px] mt-2 min-h-[110px]"
           placeholder="Notes -"

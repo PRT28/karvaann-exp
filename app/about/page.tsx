@@ -180,7 +180,7 @@ export default function AboutPage() {
                 <div className="inline-flex mt-4 mb-8 font-semibold items-center gap-3 bg-[#FFD426] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[18px]">
                     Co-Founder
                 </div>
-                <p className="text-[#808080]">Yash, our adventure-loving co-founder, has a mountaineering certification and an insatiable passion for travel. A social butterfly with a sharp eye for detail, he balances fun and work effortlessly. His boundless energy ensures every Karvaann trip is as thrilling as it is unforgettable.</p>
+                <p className="text-[#808080]">Shivam, our mountain-loving co-founder, who thrives on movement, conversations and the company of dogs, he’s outspoken when required and grounded in real, on-ground experiences. Whether climbing peaks, exploring oceans or everything in between, Shivam brings raw passion to every Karvaann journey.</p>
             </div>
         </div>
       </section>

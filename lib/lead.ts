@@ -7,6 +7,7 @@ export type LeadPayload = {
   email: string;
   tripNotes?: string;
   source: LeadSource;
+  serviceType: string;
   page: string;
 };
 
@@ -17,6 +18,7 @@ export type NormalizedLeadPayload = {
   email: string;
   tripNotes: string;
   source: LeadSource;
+  serviceType: string;
   page: string;
 };
 
@@ -27,6 +29,7 @@ export function normalizeLeadPayload(input: Partial<LeadPayload>): NormalizedLea
     whatsappNumber: (input.whatsappNumber ?? "").trim(),
     email: (input.email ?? "").trim().toLowerCase(),
     tripNotes: (input.tripNotes ?? "").trim(),
+    serviceType: (input.serviceType ?? "").trim(),
     source:
       input.source === "customised_page"
         ? "customised_page"

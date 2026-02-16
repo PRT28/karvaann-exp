@@ -51,7 +51,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative px-6 md:px-12 py-6 md:py-8">
           <h1 className="text-[#FFF] font-bold font-heading text-[28px] md:text-[60px]">Don&apos;t have a destination in mind?</h1>
-          <h4 className="text-[#FFF] mb-4 md:mb-8 font-medium font-sans text-[16px] md:text-[32px]">Good. That&apos;s where limitless journeys begin</h4>
+          <h2 className="text-[#FFF] mb-4 md:mb-8 font-medium font-sans text-[16px] md:text-[32px]">Good. That&apos;s where limitless journeys begin</h2>
           <Link href="/customised" className="mt-4 md:mt-8 bg-[#FFD425] hover:bg-[#FFF2BF] transition duration-200 ease-in-out font-medium rounded-[4px] font-sans text-[#333333] text-[16px] md:text-[24px] px-4 py-2">Know More</Link>
         </div>
       </section>
@@ -145,26 +145,31 @@ export default function Home() {
             <GlassCard
               title="Leisure Travel Services"
               description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              href="/services"
               imageSrc="https://images.unsplash.com/photo-1658298208155-ab71765747a1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <GlassCard
               title="Standalone Services"
-              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              href="/services"
+              description="Transportation to adventure activities, book your favourites, all over the world."
               imageSrc="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <GlassCard
               title="Business Travel Solutions"
-              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              href="/services"
+              description="We take the stress out of corporate travel with efficient and cost-effective solutions tailored for professionals on the move."
               imageSrc="https://images.unsplash.com/photo-1675106566229-eb0cf31934e1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <GlassCard
               title="MICE"
-              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              href="/services"
+              description="With over three years of experience executing MICE travel, we curate corporate events that go beyond logistics and deliver meaningful experiences."
               imageSrc="https://images.unsplash.com/photo-1618333258404-f509733839c4?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <GlassCard
               title="Value Added Corporate Services"
-              description="Personalized itineraries tailored to each traveller&apos;s preferences"
+              href="/services"
+              description="To support long-term corporate partnerships, we also offer value-added services that enhance efficiency and optimise costs."
               imageSrc="https://plus.unsplash.com/premium_photo-1661461204441-b239a799647b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </div>

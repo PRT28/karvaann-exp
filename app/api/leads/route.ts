@@ -19,6 +19,7 @@ export async function POST(req: Request) {
       payload.page,
       payload.destination,
       payload.travelDate,
+      payload.serviceType,
       payload.whatsappNumber,
       payload.email,
       payload.tripNotes,
