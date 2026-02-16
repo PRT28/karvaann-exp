@@ -55,8 +55,8 @@ export default function Footer() {
             <div>
               <p className="font-semibold mb-4">For Travellers</p>
               <div className="space-y-2 flex flex-col gap-2 text-white/90">
-                <Link href="/services">Limitless Booking</Link>
-                <Link href="/services">Standalone Booking</Link>
+                <Link href="/services">Leisure Travel</Link>
+                <Link href="/services">Corporate Travel</Link>
               </div>
             </div>
             <div>
