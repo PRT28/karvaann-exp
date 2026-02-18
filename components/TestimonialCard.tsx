@@ -1,3 +1,4 @@
+import { normalizeImageUrl } from "@/lib/helper";
 import Image from "next/image";
 
 export type TestimonialCardData = {
@@ -24,7 +25,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
     >
       <div className="w-90 relative h-[250px] sm:h-[300px] rounded-lg overflow-hidden md:h-[360px] lg:h-[430px]">
           <Image
-            src={testimonial.image}
+            src={normalizeImageUrl(testimonial.image)}
             alt={`${testimonial.location} testimonial background`}
             fill
             className="object-cover"
@@ -34,12 +35,12 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
           <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent" />
       </div>
         
-        <div className="absolute z-10 inset-x-4 bottom-4 md:inset-y-7 md:left-[35%] md:right-[-10px]">
-            <div className="h-full rounded-[24px] bg-[#FFF] p-5 md:p-7 shadow-[0_12px_24px_rgba(0,0,0,0.16)] flex flex-col">
+        <div className="absolute w-[270px] z-10  bottom-4 md:inset-y-7 md:right-[5px]">
+            <div className="h-full rounded-[24px] bg-[#FFFFFF] p-4 shadow-[0_12px_24px_rgba(0,0,0,0.16)] flex flex-col">
               <div className="flex items-center gap-2">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full border border-[#d3d3d9]">
                   <Image
-                    src={testimonial.profilePicSrc}
+                    src={normalizeImageUrl(testimonial.profilePicSrc)}
                     alt={testimonial.name}
                     fill
                     className="object-cover"
@@ -51,7 +52,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
                 </h3>
               </div>
 
-              <p className="mt-5 text-[12px] text-[#000] font-sans whitespace-pre-line">
+              <p className="mt-5 text-[12px] text-[#00000] font-sans whitespace-pre-line">
                 {testimonial.comment}
               </p>
 

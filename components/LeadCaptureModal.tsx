@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
+import DateInput from "@/components/forms/DateInput";
+import SelectInput from "@/components/forms/SelectInput";
 
 type LeadFormState = {
   destination: string;
@@ -161,25 +163,26 @@ export default function LeadCaptureModal() {
 
             <div>
               <label className="block mb-2 text-[16px] leading-none font-sans text-[#171717]">Travel Date</label>
-              <input
-                  type="date"
-                  className="w-full py-2 rounded-xl border border-[#D8D8D8] bg-[#F2F2F2] px-5 pr-16 text-[12px] md:text-[16px] leading-none font-sans text-[#222]"
-                  value={form.travelDate}
-                  onChange={(e) => updateField("travelDate", e.target.value)}
-                />
+              <DateInput
+                className="py-2"
+                value={form.travelDate}
+                onValueChange={(value) => updateField("travelDate", value)}
+              />
             </div>
 
             <div>
               <label className="block mb-2 text-[16px] leading-none font-sans text-[#171717]">Service Type</label>
-              <select
-                className="w-full py-2 rounded-xl border border-[#D8D8D8] bg-[#F2F2F2] px-5 text-[12px] md:text-[16px] leading-none font-sans text-[#222]"
+              <SelectInput
+                className="py-2"
                 value={form.serviceType}
-                onChange={(e) => updateField("serviceType", e.target.value)}
+                onValueChange={(value) => updateField("serviceType", value)}
+                options={[
+                  { label: "Leisure Travel", value: "Leisure Travel" },
+                  { label: "Corporate Travel", value: "Corporate Travel" },
+                ]}
+                placeholder="Select Service Type"
                 required
-              >
-                <option>Leisure Travel</option>
-                <option>Corporate Travel</option>
-              </select>
+              />
             </div>
 
             <div>

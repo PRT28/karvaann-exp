@@ -24,7 +24,13 @@ export default function Footer() {
       <div className="px-6 md:px-28 py-10">
         <div className="">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <Image src="/logo.svg" width={140} height={160} alt="Karvaann Experiences" />
+            <Image
+              src="/logo.svg"
+              width={126}
+              height={61}
+              alt="Karvaann Experiences"
+              className="w-[140px] h-auto [image-rendering:-webkit-optimize-contrast]"
+            />
             <p className="text-[16px] md:text-[18px] font-sans text-white/90 max-w-xl">
               Join Karvaann Experiences&apos; Whatsapp community &amp; stay upto date on special offers and events.
             </p>

@@ -59,7 +59,7 @@ export default async function CustomisedPage({ searchParams }: CustomisedPagePro
           </h2>
           <p className="text-[16px] text-[#8a7a6d] mt-2">Reach us at</p>
           <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6 text-[#9b9086]">
-            <span>+91 9540001036</span>
+            <span>+91 95400 01036</span>
             <span className="hidden md:inline-block w-[1px] h-4 bg-[#c4b8ac]" />
             <span>+91 70423 21010</span>
           </div>

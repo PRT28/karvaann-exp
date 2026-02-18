@@ -22,7 +22,7 @@ export default function HomeHero() {
             <span className="tw tw-1">SAME HOTEL</span>
           </p>
           <p>
-            <span className="tw tw-2">SAME SIGHTSEEING LISTS,</span>
+            <span className="tw tw-2">SAME SIGHTSEEING LISTS</span>
           </p>
           <p>
             <span className="tw tw-3">SAME COPY-PASTE TRIPS ?</span>

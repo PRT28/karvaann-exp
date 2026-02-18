@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Antonio } from "next/font/google";
 import "./globals.css";
+import "react-datepicker/dist/react-datepicker.css";
 import Navbar from "@/components/Navbar";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";

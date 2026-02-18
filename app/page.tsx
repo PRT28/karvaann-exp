@@ -41,12 +41,13 @@ export default function Home() {
         className="px-6 md:px-28 py-10 md:py-6 [content-visibility:auto] [contain-intrinsic-size:1px_900px]"
       />
       <section className="relative h-[220px] md:h-[300px] mx-6 md:mx-28 my-10 md:my-6 rounded-[33px] overflow-hidden [content-visibility:auto] [contain-intrinsic-size:1px_320px]">
+        
         <Image
           src="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="limitless"
-          className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
-          width={2000}
-          height={2000}
+          fill
+          className="object-cover"
+          sizes="1250px"
         />
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative px-6 md:px-12 py-6 md:py-8">
@@ -70,11 +71,11 @@ export default function Home() {
           </div>
 
           <Image
-            src="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="limitless"
-            width={800}
-            height={600}
-            className="w-full md:w-1/3 h-100 object-cover rounded-[12px]"
+              src="https://images.unsplash.com/photo-1699341574231-622da2d942d0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Why Karvaann"
+              width={500}
+              height={500}
+              className="w-full md:w-1/3 h-100 object-center rounded-[12px]"
           />
         </div>
         

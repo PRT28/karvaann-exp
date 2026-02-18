@@ -21,51 +21,20 @@ export const metadata: Metadata = {
   },
 };
 
-const leisureCards = [
-  {
-    title: "Limitless",
-    description:
-      "Limitless Trips are the heart of Karvaann Experiences. These are fully customised journeys designed around your preferences, pace and travel style.",
-    icon: "/services/limitless.svg",
-  },
-  {
-    title: "Standalone Services",
-    description:
-      "For travellers who prefer flexibility, we offer standalone travel solutions across destinations worldwide. These can be booked independently or combined with a larger itinerary.",
-    icon: "/services/standalone-service.svg",
-  },
-];
-
-const corporateCards = [
-  {
-    title: "Business Travel Solutions",
-    description:
-      "We take the stress out of corporate travel with efficient and cost-effective solutions tailored for professionals on the move.",
-    icon: "/services/business-travel-solutions.svg",
-  },
-  {
-    title: "MICE (Meetings, Incentives, Conferences & Exhibitions)",
-    description:
-      "With over three years of experience executing MICE travel, we curate corporate events that go beyond logistics and deliver meaningful experiences.",
-    icon: "/about/vision.svg",
-  },
-  {
-    title: "Value-Added Corporate Services",
-    description:
-      "To support long-term corporate partnerships, we also offer value-added services that enhance efficiency and optimise costs.",
-    icon: "/services/value-added.svg",
-  },
-];
 
 function ServiceCard({ title, description, icon }: { title: string; description: string; icon: string }) {
   return (
-    <div className="relative w-full sm:w-[300px] bg-[#f4efe6] shadow-md rounded-[12px] px-6 pt-16 pb-8 text-center">
-      <div className="absolute left-1/2 -translate-x-1/2 -top-10 w-18 h-18 md:w-20 md:h-20 rounded-full bg-[#FFC709] flex items-center justify-center">
-        <Image src={icon} alt={title} width={38} height={38} />
-      </div>
-      <h3 className="text-[15px] md:text-[16px] font-bold mb-4">{title}</h3>
-      <p className="text-[12px] leading-6 text-[#6a594d]">{description}</p>
-      <div className="w-10 h-[3px] bg-[#9747FF] mt-6 mx-auto rounded-lg" />
+    <div className="relative flex flex-col items-center w-full bg-[#f0ece3] shadow-[0_4px_10px_rgba(0,0,0,0.14)] rounded-[12px] px-8 md:px-12 pt-16 pb-8 text-center border border-[#e3ddd2] min-h-[430px]">
+      <Image
+        src={icon}
+        alt={title}
+        width={80}
+        height={80}
+        className="mb-6"
+      />
+      <h3 className="text-[18px] font-bold leading-none mb-4 text-[#1f1f1f]">{title}</h3>
+      <p className="text-[12px] leading-[1.45] text-[#676767] whitespace-pre-line">{description}</p>
+      <div className="w-14 h-[5px] bg-[#9747FF] mt-8 mx-auto rounded-full" />
     </div>
   );
 }
@@ -95,31 +64,93 @@ export default function ServicesPage() {
         </p>
       </div>
 
-      <section className="px-6 md:px-28 py-0 md:py-0">
-        <div className="inline-flex font-bold items-center gap-3 bg-[#FFC709] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[16px] md:text-[18px]">
+      <section className="px-6 md:px-28 pb-14 md:pb-20">
+        <div className="inline-flex font-semibold items-center gap-3 bg-[#FFD426] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[18px]">
           Leisure Travel Services
         </div>
-        <p className="mt-6 text-[14px] md:text-[15px] text-[#6a594d] max-w-3xl leading-7">
+        <p className="mt-6 mb-6 text-[16px] text-[#6a6a6a] leading-[1.3]">
           Our leisure travel services are built for travellers who want journeys that feel personal, immersive, and memorable. From complete trip planning to individual travel components, we offer flexible solutions based on how you like to travel.
         </p>
-        <div className="mt-10 md:mt-12 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-12">
-          {leisureCards.map((card) => (
-            <ServiceCard key={card.title} {...card} />
-          ))}
-        </div>
-      </section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+          <ServiceCard
+            title="Limitless Services"
+            icon="/services/limitless.svg"
+            description={`Limitless Trips are the heart of Karvaann Experiences. These are fully customised journeys designed around your preferences, pace and travel style.
 
-      <section className="px-6 md:px-28 py-12 md:py-16">
-        <div className="inline-flex font-bold items-center gap-3 bg-[#FFC709] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[16px] md:text-[18px]">
+We handpick accommodations, experiences, activities and routes to create itineraries that feel seamless and immersive. Whether you are travelling solo, as a couple, with family, or in a group, every Limitless Trip is custom-crafted so you don't have to worry about planning or coordination.
+
+There are no fixed packages. Every journey is designed from scratch to deliver moments that leave a lasting impression.`}
+          />
+          <ServiceCard
+            title="Standalone Services"
+            icon="/services/standalone-service.svg"
+            description={`For travellers who prefer flexibility or need specific services, we offer standalone travel solutions across destinations worldwide. These services can be booked independently or combined with a larger itinerary.
+
+Our standalone services include:
+- Visa assistance
+- Accommodation bookings
+- Transportation services including cabs, buses, trains, flights and car rentals
+- Adventure and activity bookings
+- Theme park, show and attraction tickets
+
+Each service is handled with the same level of care and reliability that defines a Karvaann experience.`}
+          />
+        </div>
+
+        <div className="mt-10 inline-flex font-semibold items-center gap-3 bg-[#FFD426] text-[#3b2a1f] font-sans px-4 py-2 rounded-sm text-[18px]">
           Corporate Travel Services
         </div>
-        <p className="mt-6 text-[14px] md:text-[15px] text-[#6a594d] max-w-4xl leading-7">
+        <p className="mt-6 text-[16px] text-[#6a6a6a] leading-[1.3]">
           Karvaann Experiences offers end-to-end corporate travel and event solutions designed to make business travel efficient, smooth, and impactful. From executive movements to large-scale corporate events, we manage logistics with clarity and precision.
         </p>
-        <div className="mt-10 md:mt-12 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 flex-wrap">
-          {corporateCards.map((card) => (
-            <ServiceCard key={card.title} {...card} />
-          ))}
+
+        <div className="mt-10 md:mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+          <ServiceCard
+            title="Business Travel Solutions"
+            icon="/services/business-travel-solutions.svg"
+            description={`We take the stress out of corporate travel with efficient and cost-effective solutions tailored for professionals on the move.
+
+Our corporate travel services include:
+- Flight, train and ground transportation bookings with flexible policies
+- Premium hotel partnerships with special corporate rates
+- Executive stays and meeting-friendly accommodations
+- Visa assistance for corporate travellers
+
+Every corporate journey is planned to ensure comfort, productivity and seamless execution.`}
+          />
+          <ServiceCard
+            title="MICE (Meetings, Incentives, Conferences & Exhibitions)"
+            icon="/services/mice.svg"
+            description={`With over three years of experience executing MICE travel, we curate corporate events that go beyond logistics and deliver meaningful experiences.
+
+Meetings & Conferences
+Venue sourcing, AV setup, speaker coordination, and complete event management for smooth and professional execution.
+
+Incentive Travel
+Handpicked retreats and immersive travel experiences designed to reward top performers and strengthen team bonding.
+
+Corporate Exhibitions
+End-to-end exhibition management including stall design, logistics, hospitality and on-ground coordination for a strong brand presence.
+
+Whether it's a group of 40 or 400+, we ensure flawless planning and execution at every scale.`}
+          />
+        </div>
+
+        <div className="mt-8 md:mt-10 flex justify-center">
+          <div className="w-full lg:w-[74%]">
+            <ServiceCard
+              title="Value-Added Corporate Services"
+              icon="/services/value-added.svg"
+              description={`To support long-term corporate partnerships, we also offer value-added services that enhance efficiency and optimise costs.
+
+These include:
+- GST input credit support on corporate bookings
+- Flexible credit limits for regular corporate clients
+- Dedicated relationship managers for pre-event, on-ground and post-event support
+- 24/7 assistance for real-time issue resolution
+- Complimentary upgrades and exclusive benefits for frequent business travellers`}
+            />
+          </div>
         </div>
       </section>
     </main>

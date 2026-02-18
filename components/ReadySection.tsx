@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState, useMemo } from "react";
 import { usePathname } from "next/navigation";
+import DateInput from "@/components/forms/DateInput";
+import SelectInput from "@/components/forms/SelectInput";
 
 const READY_TEXT = "Ready for your next Karvaann?";
 
@@ -130,29 +132,26 @@ export default function ReadySection() {
 
           <div>
             <label className="text-[13px] font-semibold">Travel Date</label>
-            <div className="relative mt-2">
-              <input
-                type="date"
-                className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
-                value={form.travelDate}
-                onChange={(e) => updateField("travelDate", e.target.value)}
-              />
-            </div>
+            <DateInput
+              className="mt-2 border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
+              value={form.travelDate}
+              onValueChange={(value) => updateField("travelDate", value)}
+            />
           </div>
 
           <div>
-            <label className="text-[13px] font-semibold">Whatsapp number</label>
-            <div className="relative mt-2">
-              <select
-                className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
-                value={form.serviceType}
-                onChange={(e) => updateField("serviceType", e.target.value)}
-                required
-              >
-                <option>Leisure Travel</option>
-                <option>Corporate Travel</option>
-              </select>
-            </div>
+            <label className="text-[13px] font-semibold">Service Type</label>
+            <SelectInput
+              className="mt-2 border-[#E4D6A8] bg-white rounded-md text-[14px]"
+              value={form.serviceType}
+              onValueChange={(value) => updateField("serviceType", value)}
+              options={[
+                { label: "Leisure Travel", value: "Leisure Travel" },
+                { label: "Corporate Travel", value: "Corporate Travel" },
+              ]}
+              placeholder="Select Service Type"
+              required
+            />
           </div>
 
           <div>
