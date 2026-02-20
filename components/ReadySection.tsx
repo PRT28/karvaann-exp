@@ -183,7 +183,7 @@ export default function ReadySection() {
             <label className="text-[13px] font-semibold">Remarks</label>
             <textarea
               className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px] mt-2 min-h-[110px]"
-              placeholder="Notes -"
+              placeholder="Mountains, beaches or a specific location in mind? Let us know!"
               value={form.tripNotes}
               onChange={(e) => updateField("tripNotes", e.target.value)}
             />

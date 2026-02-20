@@ -94,9 +94,9 @@ export default function CustomisedEnquiryForm({ initialDestination = "" }: Custo
       </div>
 
       <div>
-        <label className="text-[13px] font-semibold">Whatsapp number</label>
+        <label className="text-[13px] font-semibold">Service Type</label>
         <SelectInput
-          className="mt-2 border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px]"
+          className="mt-2 border-[#E4D6A8] bg-white rounded-md text-[14px]"
           value={form.serviceType}
           onValueChange={(value) => updateField("serviceType", value)}
           options={[
@@ -137,7 +137,7 @@ export default function CustomisedEnquiryForm({ initialDestination = "" }: Custo
         <label className="text-[13px] font-semibold">Remarks</label>
         <textarea
           className="w-full border border-[#E4D6A8] bg-white rounded-md px-4 py-2 text-[14px] mt-2 min-h-[110px]"
-          placeholder="Notes -"
+          placeholder="Mountains, beaches or a specific location in mind? Let us know!"
           value={form.tripNotes}
           onChange={(e) => updateField("tripNotes", e.target.value)}
         />

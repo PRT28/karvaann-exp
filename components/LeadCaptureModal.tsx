@@ -212,7 +212,7 @@ export default function LeadCaptureModal() {
               <label className="block mb-2 text-[16px] leading-none font-sans text-[#171717]">Remarks</label>
               <textarea
                 className="w-full py-2 rounded-xl border border-[#D8D8D8] bg-[#F2F2F2] px-5 text-[12px] md:text-[16px] leading-none font-sans text-[#222] min-h-[90px]"
-                placeholder="Tell us about your trip"
+                placeholder="Mountains, beaches or a specific location in mind? Let us know!"
                 value={form.tripNotes}
                 onChange={(e) => updateField("tripNotes", e.target.value)}
               />

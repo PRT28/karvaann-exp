@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CustomisedEnquiryForm from "@/components/forms/CustomisedEnquiryForm";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Customised Travel | Karvaann Experiences",
@@ -58,17 +59,17 @@ export default async function CustomisedPage({ searchParams }: CustomisedPagePro
             Prefer a call or WhatsApp?
           </h2>
           <p className="text-[16px] text-[#8a7a6d] mt-2">Reach us at</p>
-          <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6 text-[#9b9086]">
+          <div className="mt-6 mb-8 flex flex-col md:flex-row items-center justify-center gap-6 text-[#9b9086]">
             <span>+91 95400 01036</span>
             <span className="hidden md:inline-block w-[1px] h-4 bg-[#c4b8ac]" />
             <span>+91 70423 21010</span>
           </div>
-          <button
-            type="button"
+          <Link
+            href="/contact"
             className="mt-6 bg-[#F3C300] hover:bg-[#FFD425] transition text-[#2f241b] font-semibold rounded-sm px-6 py-2"
           >
-            contact now
-          </button>
+            Contact Now
+          </Link>
         </div>
       </section>
     </main>

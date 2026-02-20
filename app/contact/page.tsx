@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact Us | Karvaann Experiences",
@@ -36,10 +37,10 @@ export default function ContactPage() {
 
       <section className="px-6 md:px-28 py-12 md:py-16 text-center">
         <div className="inline-flex font-bold items-center gap-3 bg-[#FFE9A6] text-[#3b2a1f] font-sans px-6 py-2 rounded-md text-[14px] md:text-[16px] shadow-sm">
-          Let’s start a conversation
+          Let&apos;s start a conversation
         </div>
         <p className="mt-6 md:mt-8 text-[15px] md:text-[18px] text-[#7a6a5d] max-w-3xl mx-auto leading-7">
-          Whether you’re planning your next journey, exploring corporate travel solutions, or simply have a question, we’re here to help. Reach out to us and our team will guide you every step of the way.
+          Whether you&apos;re planning your next journey, exploring corporate travel solutions, or simply have a question, we’re here to help. Reach out to us and our team will guide you every step of the way.
         </p>
       </section>
 
@@ -54,13 +55,13 @@ export default function ContactPage() {
           </div>
           <div className="mt-6 h-[1px] bg-[#d9cdbf]" />
           <p className="mt-4 text-[#9b9086]">info@karvaannexperiences.com</p>
-          <div className="mt-4 h-[1px] bg-[#d9cdbf]" />
-          <button
-            type="button"
-            className="mt-6 bg-[#F3C300] hover:bg-[#FFD425] transition text-[#2f241b] font-semibold rounded-sm px-6 py-2"
+          <div className="mt-4 mb-8 h-[1px] bg-[#d9cdbf]" />
+          <Link
+            href="/contact"
+            className="mt-12 bg-[#F3C300] hover:bg-[#FFD425] transition text-[#2f241b] font-semibold rounded-sm px-6 py-2"
           >
-            contact now
-          </button>
+            Contact Now
+          </Link>
         </div>
       </section>
 
